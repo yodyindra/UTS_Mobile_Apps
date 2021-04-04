@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
             ThemeData(brightness: Brightness.dark, primaryColor: Colors.black),
         home: Scaffold(
           appBar: AppBar(
-            title: const Text('Hello'),
+            title: const Text('List'),
           ),
           body: DummyListView(),
           bottomNavigationBar: BottomNavigationBar(
