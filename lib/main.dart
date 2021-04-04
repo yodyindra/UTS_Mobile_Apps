@@ -14,6 +14,23 @@ class MyApp extends StatelessWidget {
             title: const Text('Hello'),
           ),
           body: DummyListView(),
+          bottomNavigationBar: BottomNavigationBar(
+            type: BottomNavigationBarType.fixed,
+            backgroundColor: Colors.blue,
+            items: const <BottomNavigationBarItem>[
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.home), title: const Text('Home')),
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.local_movies),
+                  title: const Text('Top Rated')),
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.timer), title: const Text('Upcoming')),
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.favorite), title: const Text('Favorites')),
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.settings), title: const Text('Settings')),
+            ],
+          ),
         ));
   }
 }
